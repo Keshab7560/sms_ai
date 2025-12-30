@@ -1,0 +1,1000 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI School Management System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --primary: #4361ee;
+            --primary-dark: #3a56d4;
+            --secondary: #7209b7;
+            --success: #4cc9f0;
+            --danger: #f72585;
+            --warning: #ff9e00;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --gray: #6c757d;
+            --light-gray: #e9ecef;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+        }
+
+        .header h1 {
+            color: var(--dark);
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .header p {
+            color: var(--gray);
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* Main Layout */
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 400px;
+            gap: 30px;
+        }
+
+        /* Query Section */
+        .query-section {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            height: fit-content;
+        }
+
+        .query-section h2 {
+            color: var(--dark);
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.8rem;
+        }
+
+        .query-section h2 i {
+            color: var(--primary);
+        }
+
+        .query-box {
+            margin-bottom: 25px;
+        }
+
+        #queryInput {
+            width: 100%;
+            padding: 20px;
+            border: 2px solid var(--light-gray);
+            border-radius: 15px;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            resize: none;
+            min-height: 120px;
+            font-family: inherit;
+        }
+
+        #queryInput:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.2);
+        }
+
+        .query-actions {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+            flex: 1;
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(67, 97, 238, 0.3);
+        }
+
+        .btn-secondary {
+            background: var(--light-gray);
+            color: var(--dark);
+        }
+
+        .btn-secondary:hover {
+            background: #dee2e6;
+        }
+
+        .btn-success {
+            background: var(--success);
+            color: white;
+        }
+
+        .btn-warning {
+            background: var(--warning);
+            color: white;
+        }
+
+        /* Examples */
+        .examples {
+            margin-top: 30px;
+        }
+
+        .examples h3 {
+            color: var(--dark);
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .example-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 10px;
+        }
+
+        .example-item {
+            padding: 12px 15px;
+            background: var(--light-gray);
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 0.95rem;
+            color: var(--dark);
+            border-left: 4px solid var(--primary);
+        }
+
+        .example-item:hover {
+            background: #dee2e6;
+            transform: translateX(5px);
+        }
+
+        /* Results Section */
+        .results-section {
+            grid-column: 1;
+        }
+
+        .results-container {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+            min-height: 500px;
+        }
+
+        .results-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid var(--light-gray);
+        }
+
+        .results-header h2 {
+            color: var(--dark);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.8rem;
+        }
+
+        .query-info {
+            background: var(--light);
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+        }
+
+        .query-info p {
+            color: var(--dark);
+            font-weight: 500;
+        }
+
+        .query-info .badge {
+            display: inline-block;
+            padding: 5px 12px;
+            background: var(--primary);
+            color: white;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-left: 10px;
+        }
+
+        /* Results Content */
+        .results-content {
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+
+        .results-tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+
+        .tab-btn {
+            padding: 12px 25px;
+            background: var(--light-gray);
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 600;
+            color: var(--gray);
+            transition: all 0.3s;
+        }
+
+        .tab-btn:hover {
+            background: #dee2e6;
+        }
+
+        .tab-btn.active {
+            background: var(--primary);
+            color: white;
+        }
+
+        /* Result Cards */
+        .result-cards {
+            display: grid;
+            gap: 20px;
+        }
+
+        .result-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            border: 2px solid var(--light-gray);
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .result-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .result-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 6px;
+            height: 100%;
+            background: var(--primary);
+        }
+
+        .result-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .entity-type {
+            display: inline-block;
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .student-type { background: #e3f2fd; color: #1565c0; }
+        .teacher-type { background: #f3e5f5; color: #7b1fa2; }
+        .school-type { background: #e8f5e9; color: #2e7d32; }
+        .class-type { background: #fff3e0; color: #ef6c00; }
+        .parent-type { background: #fce4ec; color: #c2185b; }
+
+        .confidence {
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+
+        .result-content {
+            color: var(--dark);
+            line-height: 1.6;
+            white-space: pre-line;
+            margin-bottom: 15px;
+        }
+
+        .result-meta {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .meta-tag {
+            padding: 5px 12px;
+            background: var(--light-gray);
+            border-radius: 15px;
+            font-size: 0.85rem;
+            color: var(--gray);
+        }
+
+        /* Statistics */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 1.8rem;
+        }
+
+        .stat-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin: 10px 0;
+        }
+
+        .stat-label {
+            color: var(--gray);
+            font-size: 1.1rem;
+        }
+
+        /* Loading */
+        .loading {
+            text-align: center;
+            padding: 50px;
+        }
+
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid var(--light-gray);
+            border-top: 5px solid var(--primary);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Empty State */
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--gray);
+        }
+
+        .empty-state i {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            color: var(--light-gray);
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            height: fit-content;
+        }
+
+        .sidebar h2 {
+            color: var(--dark);
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.8rem;
+        }
+
+        .stats-overview {
+            margin-bottom: 30px;
+        }
+
+        .stat-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background: var(--light-gray);
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .stat-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .stat-name {
+            color: var(--dark);
+            font-weight: 500;
+        }
+
+        .stat-value-sidebar {
+            background: var(--primary);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+
+        .quick-actions {
+            margin-top: 30px;
+        }
+
+        .action-btn {
+            width: 100%;
+            margin-bottom: 10px;
+            text-align: left;
+            justify-content: flex-start;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .sidebar {
+                order: -1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .example-list {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .query-actions {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1><i class="fas fa-graduation-cap"></i> AI School Management System</h1>
+            <p>Ask natural language questions about students, teachers, schools, classes, and parents. Powered by AI vector search and semantic understanding.</p>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Query Section -->
+            <div class="query-section">
+                <h2><i class="fas fa-search"></i> Ask Your Question</h2>
+                <div class="query-box">
+                    <textarea id="queryInput" placeholder="Ask anything about the school management system...&#10;Example: How many students are in Grade 5?&#10;Example: Find teachers who teach Mathematics&#10;Example: Show me schools in Maharashtra"></textarea>
+                </div>
+                <div class="query-actions">
+                    <button class="btn btn-primary" onclick="submitQuery()">
+                        <i class="fas fa-paper-plane"></i> Ask AI
+                    </button>
+                    <button class="btn btn-secondary" onclick="clearQuery()">
+                        <i class="fas fa-eraser"></i> Clear
+                    </button>
+                    <button class="btn btn-success" onclick="getStatistics()">
+                        <i class="fas fa-chart-bar"></i> Statistics
+                    </button>
+                </div>
+
+                <div class="examples">
+                    <h3><i class="fas fa-lightbulb"></i> Try These Examples:</h3>
+                    <div class="example-list">
+                        <div class="example-item" onclick="setExample(this)">How many students are there in total?</div>
+                        <div class="example-item" onclick="setExample(this)">Show me information about teacher TCH001</div>
+                        <div class="example-item" onclick="setExample(this)">List all schools in Maharashtra</div>
+                        <div class="example-item" onclick="setExample(this)">Find students in Grade 5</div>
+                        <div class="example-item" onclick="setExample(this)">Who are the teachers teaching Mathematics?</div>
+                        <div class="example-item" onclick="setExample(this)">What is the student strength in SCH001?</div>
+                        <div class="example-item" onclick="setExample(this)">Show parents from Pune</div>
+                        <div class="example-item" onclick="setExample(this)">Which classes are taught by Sarah Johnson?</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <h2><i class="fas fa-chart-pie"></i> Quick Stats</h2>
+                <div class="stats-overview" id="quickStats">
+                    <div class="stat-item">
+                        <span class="stat-name">Total Schools</span>
+                        <span class="stat-value-sidebar" id="totalSchools">10</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-name">Total Students</span>
+                        <span class="stat-value-sidebar" id="totalStudents">274</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-name">Total Teachers</span>
+                        <span class="stat-value-sidebar" id="totalTeachers">103</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-name">Total Parents</span>
+                        <span class="stat-value-sidebar" id="totalParents">74</span>
+                    </div>
+                </div>
+
+                <div class="quick-actions">
+                    <h2><i class="fas fa-bolt"></i> Quick Actions</h2>
+                    <button class="btn btn-primary action-btn" onclick="quickQuery('Show all schools')">
+                        <i class="fas fa-school"></i> View All Schools
+                    </button>
+                    <button class="btn btn-warning action-btn" onclick="quickQuery('List all teachers')">
+                        <i class="fas fa-chalkboard-teacher"></i> View All Teachers
+                    </button>
+                    <button class="btn btn-success action-btn" onclick="quickQuery('Show student statistics')">
+                        <i class="fas fa-users"></i> Student Analytics
+                    </button>
+                    <button class="btn btn-secondary action-btn" onclick="quickQuery('Find classes with more than 30 students')">
+                        <i class="fas fa-door-open"></i> Large Classes
+                    </button>
+                </div>
+            </div>
+
+            <!-- Results Section -->
+            <div class="results-section">
+                <div class="results-container">
+                    <div class="results-header">
+                        <h2><i class="fas fa-poll"></i> Results</h2>
+                        <div class="results-tabs" id="resultsTabs">
+                            <button class="tab-btn active" onclick="showTab('vector')">Semantic Search</button>
+                            <button class="tab-btn" onclick="showTab('specific')">Specific Results</button>
+                            <button class="tab-btn" onclick="showTab('stats')">Statistics</button>
+                        </div>
+                    </div>
+
+                    <div class="query-info" id="queryInfo" style="display: none;">
+                        <p>Query: <span id="currentQuery"></span> <span class="badge" id="queryTypeBadge"></span></p>
+                    </div>
+
+                    <!-- Vector Results Tab -->
+                    <div class="results-content active" id="vectorResults">
+                        <div class="result-cards" id="vectorResultsContent">
+                            <div class="empty-state">
+                                <i class="fas fa-search"></i>
+                                <h3>No results yet</h3>
+                                <p>Enter a query to see AI-powered search results</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Specific Results Tab -->
+                    <div class="results-content" id="specificResults">
+                        <div class="result-cards" id="specificResultsContent">
+                            <div class="empty-state">
+                                <i class="fas fa-database"></i>
+                                <h3>No specific results</h3>
+                                <p>Specific codes or detailed queries will appear here</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Statistics Tab -->
+                    <div class="results-content" id="statsResults">
+                        <div class="stats-grid" id="statsResultsContent">
+                            <div class="empty-state">
+                                <i class="fas fa-chart-bar"></i>
+                                <h3>No statistics loaded</h3>
+                                <p>Click "Statistics" button or ask for data analytics</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Loading State -->
+                    <div class="loading" id="loading" style="display: none;">
+                        <div class="spinner"></div>
+                        <h3>AI is thinking...</h3>
+                        <p>Searching through school database</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>AI School Management System • Powered by ChromaDB & Sentence Transformers • Data Updated: 2024</p>
+        </div>
+    </div>
+
+    <script>
+        // Global variables
+        let currentResults = null;
+
+        // Set example query
+        function setExample(element) {
+            document.getElementById('queryInput').value = element.textContent;
+        }
+
+        // Clear query
+        function clearQuery() {
+            document.getElementById('queryInput').value = '';
+            document.getElementById('queryInfo').style.display = 'none';
+            document.getElementById('vectorResultsContent').innerHTML = `
+                <div class="empty-state">
+                    <i class="fas fa-search"></i>
+                    <h3>No results yet</h3>
+                    <p>Enter a query to see AI-powered search results</p>
+                </div>`;
+            document.getElementById('specificResultsContent').innerHTML = `
+                <div class="empty-state">
+                    <i class="fas fa-database"></i>
+                    <h3>No specific results</h3>
+                    <p>Specific codes or detailed queries will appear here</p>
+                </div>`;
+        }
+
+        // Quick query
+        function quickQuery(query) {
+            document.getElementById('queryInput').value = query;
+            submitQuery();
+        }
+
+        // Submit query to backend
+        async function submitQuery() {
+            const query = document.getElementById('queryInput').value.trim();
+            if (!query) {
+                alert('Please enter a query');
+                return;
+            }
+
+            // Show loading
+            showLoading(true);
+            
+            try {
+                const response = await fetch('/query', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ query: query })
+                });
+
+                const data = await response.json();
+                currentResults = data;
+                
+                // Show query info
+                document.getElementById('queryInfo').style.display = 'block';
+                document.getElementById('currentQuery').textContent = data.query;
+                document.getElementById('queryTypeBadge').textContent = data.query_type ? data.query_type.toUpperCase() : 'GENERAL';
+                
+                // Display results
+                displayResults(data);
+                
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Error processing query: ' + error.message);
+            } finally {
+                showLoading(false);
+            }
+        }
+
+        // Get statistics
+        async function getStatistics() {
+            showLoading(true);
+            try {
+                const response = await fetch('/stats');
+                const data = await response.json();
+                
+                // Update quick stats
+                if (data.total_students) {
+                    document.getElementById('totalStudents').textContent = data.total_students;
+                }
+                if (data.total_teachers) {
+                    document.getElementById('totalTeachers').textContent = data.total_teachers;
+                }
+                if (data.total_schools) {
+                    document.getElementById('totalSchools').textContent = data.total_schools;
+                }
+                
+                // Show stats tab
+                displayStatistics(data);
+                showTab('stats');
+                
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Error fetching statistics: ' + error.message);
+            } finally {
+                showLoading(false);
+            }
+        }
+
+        // Display results
+        function displayResults(data) {
+            // Vector results
+            if (data.vector_results && data.vector_results.length > 0) {
+                let html = '';
+                data.vector_results.forEach(result => {
+                    const type = result.metadata.type;
+                    const typeClass = type + '-type';
+                    const confidence = ((1 - result.distance) * 100).toFixed(1);
+                    
+                    html += `
+                    <div class="result-card">
+                        <div class="result-header">
+                            <span class="entity-type ${typeClass}">${type.toUpperCase()}</span>
+                            <span class="confidence">Confidence: ${confidence}%</span>
+                        </div>
+                        <div class="result-content">${formatContent(result.content)}</div>
+                        <div class="result-meta">
+                            ${Object.entries(result.metadata).map(([key, value]) => 
+                                `<span class="meta-tag">${key}: ${value}</span>`
+                            ).join('')}
+                        </div>
+                    </div>`;
+                });
+                document.getElementById('vectorResultsContent').innerHTML = html;
+            } else {
+                document.getElementById('vectorResultsContent').innerHTML = `
+                    <div class="empty-state">
+                        <i class="fas fa-search"></i>
+                        <h3>No semantic results found</h3>
+                        <p>Try rephrasing your query</p>
+                    </div>`;
+            }
+
+            // Specific results
+            if (data.specific_results && data.specific_results.length > 0) {
+                let html = '';
+                data.specific_results.forEach(result => {
+                    const type = result.type.replace('_detail', '');
+                    const typeClass = type + '-type';
+                    
+                    html += `
+                    <div class="result-card">
+                        <div class="result-header">
+                            <span class="entity-type ${typeClass}">${type.toUpperCase()} DETAIL</span>
+                        </div>
+                        <div class="result-content">${formatSpecificResult(result.data)}</div>
+                    </div>`;
+                });
+                document.getElementById('specificResultsContent').innerHTML = html;
+            } else {
+                document.getElementById('specificResultsContent').innerHTML = `
+                    <div class="empty-state">
+                        <i class="fas fa-database"></i>
+                        <h3>No specific results</h3>
+                        <p>Try searching with specific codes like STU001 or TCH001</p>
+                    </div>`;
+            }
+
+            // Statistics
+            if (data.statistics) {
+                displayStatistics(data.statistics);
+            }
+
+            // Show vector tab by default
+            showTab('vector');
+        }
+
+        // Display statistics
+        function displayStatistics(stats) {
+            if (!stats) return;
+            
+            let html = '';
+            
+            // Add stat cards
+            if (stats.total_students) {
+                html += `
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div class="stat-value">${stats.total_students}</div>
+                    <div class="stat-label">Total Students</div>
+                </div>`;
+            }
+            
+            if (stats.total_teachers) {
+                html += `
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <div class="stat-value">${stats.total_teachers}</div>
+                    <div class="stat-label">Total Teachers</div>
+                </div>`;
+            }
+            
+            if (stats.total_schools) {
+                html += `
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="stat-value">${stats.total_schools}</div>
+                    <div class="stat-label">Total Schools</div>
+                </div>`;
+            }
+            
+            // Add gender distribution if available
+            if (stats.students_by_gender) {
+                for (const [gender, count] of Object.entries(stats.students_by_gender)) {
+                    html += `
+                    <div class="stat-card">
+                        <div class="stat-icon" style="background: ${gender === 'MALE' ? '#4361ee' : '#f72585'}">
+                            <i class="fas ${gender === 'MALE' ? 'fa-male' : 'fa-female'}"></i>
+                        </div>
+                        <div class="stat-value">${count}</div>
+                        <div class="stat-label">${gender.charAt(0) + gender.slice(1).toLowerCase()} Students</div>
+                    </div>`;
+                }
+            }
+            
+            document.getElementById('statsResultsContent').innerHTML = html || `
+                <div class="empty-state">
+                    <i class="fas fa-chart-bar"></i>
+                    <h3>No statistics available</h3>
+                    <p>Statistics data not loaded</p>
+                </div>`;
+        }
+
+        // Format content for display
+        function formatContent(content) {
+            // Clean up the content
+            return content
+                .replace(/\n+/g, '\n')
+                .replace(/^\s+/gm, '')
+                .trim();
+        }
+
+        // Format specific result
+        function formatSpecificResult(data) {
+            let html = '';
+            for (const [key, value] of Object.entries(data)) {
+                if (value && value.toString().trim()) {
+                    html += `<strong>${key.replace(/_/g, ' ').toUpperCase()}:</strong> ${value}<br>`;
+                }
+            }
+            return html;
+        }
+
+        // Show tab
+        function showTab(tabName) {
+            // Update tabs
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.textContent.toLowerCase().includes(tabName)) {
+                    btn.classList.add('active');
+                }
+            });
+
+            // Show content
+            document.querySelectorAll('.results-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            document.getElementById(tabName + 'Results').classList.add('active');
+        }
+
+        // Show/hide loading
+        function showLoading(show) {
+            document.getElementById('loading').style.display = show ? 'block' : 'none';
+            document.querySelectorAll('.results-content').forEach(content => {
+                content.style.display = show ? 'none' : 'block';
+            });
+        }
+
+        // Initialize with some stats
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load initial statistics
+            getStatistics();
+            
+            // Add enter key support
+            document.getElementById('queryInput').addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' && e.ctrlKey) {
+                    submitQuery();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

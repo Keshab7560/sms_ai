@@ -1,0 +1,929 @@
+[
+  {
+    "teacher_code":"TCH001",
+    "teacher_name":"Sarah Johnson",
+    "school_code":"SCH001",
+    "subject":"English",
+    "specialization":"Primary Education",
+    "email":"sarah.johnson@schoolexample.com",
+    "phone":"555-0101"
+  },
+  {
+    "teacher_code":"TCH002",
+    "teacher_name":"Michael Chen",
+    "school_code":"SCH001",
+    "subject":"Mathematics",
+    "specialization":"Elementary Math",
+    "email":"michael.chen@schoolexample.com",
+    "phone":"555-0102"
+  },
+  {
+    "teacher_code":"TCH003",
+    "teacher_name":"David Miller",
+    "school_code":"SCH001",
+    "subject":"Science",
+    "specialization":"General Science",
+    "email":"david.miller@schoolexample.com",
+    "phone":"555-0103"
+  },
+  {
+    "teacher_code":"TCH004",
+    "teacher_name":"Lisa Rodriguez",
+    "school_code":"SCH001",
+    "subject":"Social Studies",
+    "specialization":"History",
+    "email":"lisa.rodriguez@schoolexample.com",
+    "phone":"555-0104"
+  },
+  {
+    "teacher_code":"TCH005",
+    "teacher_name":"James Wilson",
+    "school_code":"SCH001",
+    "subject":"Mathematics",
+    "specialization":"Middle School Math",
+    "email":"james.wilson@schoolexample.com",
+    "phone":"555-0105"
+  },
+  {
+    "teacher_code":"TCH006",
+    "teacher_name":"Emily Brown",
+    "school_code":"SCH001",
+    "subject":"Science",
+    "specialization":"Life Sciences",
+    "email":"emily.brown@schoolexample.com",
+    "phone":"555-0106"
+  },
+  {
+    "teacher_code":"TCH007",
+    "teacher_name":"Jennifer Lee",
+    "school_code":"SCH002",
+    "subject":"English",
+    "specialization":"Primary Education",
+    "email":"jennifer.lee@schoolexample.com",
+    "phone":"555-0107"
+  },
+  {
+    "teacher_code":"TCH008",
+    "teacher_name":"Robert Taylor",
+    "school_code":"SCH002",
+    "subject":"Mathematics",
+    "specialization":"Elementary Math",
+    "email":"robert.taylor@schoolexample.com",
+    "phone":"555-0108"
+  },
+  {
+    "teacher_code":"TCH009",
+    "teacher_name":"Amanda White",
+    "school_code":"SCH002",
+    "subject":"Science",
+    "specialization":"General Science",
+    "email":"amanda.white@schoolexample.com",
+    "phone":"555-0109"
+  },
+  {
+    "teacher_code":"TCH010",
+    "teacher_name":"Thomas Clark",
+    "school_code":"SCH002",
+    "subject":"Mathematics",
+    "specialization":"Middle School Math",
+    "email":"thomas.clark@schoolexample.com",
+    "phone":"555-0110"
+  },
+  {
+    "teacher_code":"TCH011",
+    "teacher_name":"Patricia Lewis",
+    "school_code":"SCH002",
+    "subject":"English",
+    "specialization":"Middle School Literature",
+    "email":"patricia.lewis@schoolexample.com",
+    "phone":"555-0111"
+  },
+  {
+    "teacher_code":"TCH012",
+    "teacher_name":"Kevin Hall",
+    "school_code":"SCH003",
+    "subject":"Mathematics",
+    "specialization":"Algebra",
+    "email":"kevin.hall@schoolexample.com",
+    "phone":"555-0112"
+  },
+  {
+    "teacher_code":"TCH013",
+    "teacher_name":"Susan Allen",
+    "school_code":"SCH003",
+    "subject":"Science",
+    "specialization":"Physical Science",
+    "email":"susan.allen@schoolexample.com",
+    "phone":"555-0113"
+  },
+  {
+    "teacher_code":"TCH014",
+    "teacher_name":"Richard Young",
+    "school_code":"SCH003",
+    "subject":"Social Studies",
+    "specialization":"World History",
+    "email":"richard.young@schoolexample.com",
+    "phone":"555-0114"
+  },
+  {
+    "teacher_code":"TCH015",
+    "teacher_name":"Charles King",
+    "school_code":"SCH003",
+    "subject":"English",
+    "specialization":"Literature",
+    "email":"charles.king@schoolexample.com",
+    "phone":"555-0115"
+  },
+  {
+    "teacher_code":"TCH016",
+    "teacher_name":"Maria Scott",
+    "school_code":"SCH004",
+    "subject":"Mathematics",
+    "specialization":"Geometry",
+    "email":"maria.scott@schoolexample.com",
+    "phone":"555-0116"
+  },
+  {
+    "teacher_code":"TCH017",
+    "teacher_name":"Karen Adams",
+    "school_code":"SCH004",
+    "subject":"Science",
+    "specialization":"Biology",
+    "email":"karen.adams@schoolexample.com",
+    "phone":"555-0117"
+  },
+  {
+    "teacher_code":"TCH018",
+    "teacher_name":"Joseph Baker",
+    "school_code":"SCH004",
+    "subject":"English",
+    "specialization":"Grammar",
+    "email":"joseph.baker@schoolexample.com",
+    "phone":"555-0118"
+  },
+  {
+    "teacher_code":"TCH019",
+    "teacher_name":"Elizabeth Nelson",
+    "school_code":"SCH004",
+    "subject":"Science",
+    "specialization":"Chemistry",
+    "email":"elizabeth.nelson@schoolexample.com",
+    "phone":"555-0119"
+  },
+  {
+    "teacher_code":"TCH020",
+    "teacher_name":"Daniel Carter",
+    "school_code":"SCH005",
+    "subject":"English",
+    "specialization":"Primary Education",
+    "email":"daniel.carter@schoolexample.com",
+    "phone":"555-0120"
+  },
+  {
+    "teacher_code":"TCH021",
+    "teacher_name":"Margaret Mitchell",
+    "school_code":"SCH005",
+    "subject":"Mathematics",
+    "specialization":"Elementary Math",
+    "email":"margaret.mitchell@schoolexample.com",
+    "phone":"555-0121"
+  },
+  {
+    "teacher_code":"TCH022",
+    "teacher_name":"Paul Perez",
+    "school_code":"SCH005",
+    "subject":"English",
+    "specialization":"Primary Education",
+    "email":"paul.perez@schoolexample.com",
+    "phone":"555-0122"
+  },
+  {
+    "teacher_code":"TCH023",
+    "teacher_name":"Rebecca Roberts",
+    "school_code":"SCH005",
+    "subject":"Mathematics",
+    "specialization":"Elementary Math",
+    "email":"rebecca.roberts@schoolexample.com",
+    "phone":"555-0123"
+  },
+  {
+    "teacher_code":"TCH024",
+    "teacher_name":"Mark Turner",
+    "school_code":"SCH005",
+    "subject":"Science",
+    "specialization":"General Science",
+    "email":"mark.turner@schoolexample.com",
+    "phone":"555-0124"
+  },
+  {
+    "teacher_code":"TCH025",
+    "teacher_name":"Nancy Phillips",
+    "school_code":"SCH005",
+    "subject":"Social Studies",
+    "specialization":"Geography",
+    "email":"nancy.phillips@schoolexample.com",
+    "phone":"555-0125"
+  },
+  {
+    "teacher_code":"TCH026",
+    "teacher_name":"Steven Campbell",
+    "school_code":"SCH005",
+    "subject":"Mathematics",
+    "specialization":"Pre-Algebra",
+    "email":"steven.campbell@schoolexample.com",
+    "phone":"555-0126"
+  },
+  {
+    "teacher_code":"TCH027",
+    "teacher_name":"Betty Parker",
+    "school_code":"SCH005",
+    "subject":"Science",
+    "specialization":"Life Science",
+    "email":"betty.parker@schoolexample.com",
+    "phone":"555-0127"
+  },
+  {
+    "teacher_code":"TCH028",
+    "teacher_name":"Edward Evans",
+    "school_code":"SCH005",
+    "subject":"Mathematics",
+    "specialization":"Basic Math",
+    "email":"edward.evans@schoolexample.com",
+    "phone":"555-0128"
+  },
+  {
+    "teacher_code":"TCH029",
+    "teacher_name":"Donna Edwards",
+    "school_code":"SCH005",
+    "subject":"English",
+    "specialization":"Reading Skills",
+    "email":"donna.edwards@schoolexample.com",
+    "phone":"555-0129"
+  },
+  {
+    "teacher_code":"TCH030",
+    "teacher_name":"George Collins",
+    "school_code":"SCH005",
+    "subject":"Mathematics",
+    "specialization":"Math Fundamentals",
+    "email":"george.collins@schoolexample.com",
+    "phone":"555-0130"
+  },
+  {
+    "teacher_code":"TCH031",
+    "teacher_name":"Helen Stewart",
+    "school_code":"SCH005",
+    "subject":"Science",
+    "specialization":"General Science",
+    "email":"helen.stewart@schoolexample.com",
+    "phone":"555-0131"
+  },
+  {
+    "teacher_code":"TCH032",
+    "teacher_name":"Brian Sanchez",
+    "school_code":"SCH005",
+    "subject":"Mathematics",
+    "specialization":"Algebra I",
+    "email":"brian.sanchez@schoolexample.com",
+    "phone":"555-0132"
+  },
+  {
+    "teacher_code":"TCH033",
+    "teacher_name":"Sharon Morris",
+    "school_code":"SCH005",
+    "subject":"English",
+    "specialization":"Literature I",
+    "email":"sharon.morris@schoolexample.com",
+    "phone":"555-0133"
+  },
+  {
+    "teacher_code":"TCH034",
+    "teacher_name":"Ronald Rogers",
+    "school_code":"SCH005",
+    "subject":"Science",
+    "specialization":"Biology I",
+    "email":"ronald.rogers@schoolexample.com",
+    "phone":"555-0134"
+  },
+  {
+    "teacher_code":"TCH035",
+    "teacher_name":"Dorothy Reed",
+    "school_code":"SCH005",
+    "subject":"Mathematics",
+    "specialization":"Algebra II",
+    "email":"dorothy.reed@schoolexample.com",
+    "phone":"555-0135"
+  },
+  {
+    "teacher_code":"TCH036",
+    "teacher_name":"Anthony Cook",
+    "school_code":"SCH005",
+    "subject":"Science",
+    "specialization":"Chemistry I",
+    "email":"anthony.cook@schoolexample.com",
+    "phone":"555-0136"
+  },
+  {
+    "teacher_code":"TCH037",
+    "teacher_name":"Kathleen Morgan",
+    "school_code":"SCH005",
+    "subject":"Mathematics",
+    "specialization":"Geometry I",
+    "email":"kathleen.morgan@schoolexample.com",
+    "phone":"555-0137"
+  },
+  {
+    "teacher_code":"TCH038",
+    "teacher_name":"Jason Bell",
+    "school_code":"SCH005",
+    "subject":"Mathematics",
+    "specialization":"Pre-Calculus",
+    "email":"jason.bell@schoolexample.com",
+    "phone":"555-0138"
+  },
+  {
+    "teacher_code":"TCH039",
+    "teacher_name":"Anna Murphy",
+    "school_code":"SCH005",
+    "subject":"Science",
+    "specialization":"Physics I",
+    "email":"anna.murphy@schoolexample.com",
+    "phone":"555-0139"
+  },
+  {
+    "teacher_code":"TCH040",
+    "teacher_name":"Joshua Bailey",
+    "school_code":"SCH005",
+    "subject":"English",
+    "specialization":"Advanced Grammar",
+    "email":"joshua.bailey@schoolexample.com",
+    "phone":"555-0140"
+  },
+  {
+    "teacher_code":"TCH041",
+    "teacher_name":"Megan Rivera",
+    "school_code":"SCH005",
+    "subject":"Social Studies",
+    "specialization":"American History",
+    "email":"megan.rivera@schoolexample.com",
+    "phone":"555-0141"
+  },
+  {
+    "teacher_code":"TCH042",
+    "teacher_name":"Andrew Cooper",
+    "school_code":"SCH005",
+    "subject":"Mathematics",
+    "specialization":"Statistics",
+    "email":"andrew.cooper@schoolexample.com",
+    "phone":"555-0142"
+  },
+  {
+    "teacher_code":"TCH043",
+    "teacher_name":"Ashley Richardson",
+    "school_code":"SCH005",
+    "subject":"Science",
+    "specialization":"Environmental Science",
+    "email":"ashley.richardson@schoolexample.com",
+    "phone":"555-0143"
+  },
+  {
+    "teacher_code":"TCH044",
+    "teacher_name":"Ryan Cox",
+    "school_code":"SCH005",
+    "subject":"English",
+    "specialization":"World Literature",
+    "email":"ryan.cox@schoolexample.com",
+    "phone":"555-0144"
+  },
+  {
+    "teacher_code":"TCH045",
+    "teacher_name":"Kelly Howard",
+    "school_code":"SCH005",
+    "subject":"Mathematics",
+    "specialization":"Calculus",
+    "email":"kelly.howard@schoolexample.com",
+    "phone":"555-0145"
+  },
+  {
+    "teacher_code":"TCH046",
+    "teacher_name":"Gary Ward",
+    "school_code":"SCH005",
+    "subject":"Science",
+    "specialization":"Advanced Biology",
+    "email":"gary.ward@schoolexample.com",
+    "phone":"555-0146"
+  },
+  {
+    "teacher_code":"TCH047",
+    "teacher_name":"Angela Torres",
+    "school_code":"SCH005",
+    "subject":"English",
+    "specialization":"AP Literature",
+    "email":"angela.torres@schoolexample.com",
+    "phone":"555-0147"
+  },
+  {
+    "teacher_code":"TCH048",
+    "teacher_name":"Justin Peterson",
+    "school_code":"SCH006",
+    "subject":"English",
+    "specialization":"Primary Education",
+    "email":"justin.peterson@schoolexample.com",
+    "phone":"555-0148"
+  },
+  {
+    "teacher_code":"TCH049",
+    "teacher_name":"Heather Gray",
+    "school_code":"SCH006",
+    "subject":"Mathematics",
+    "specialization":"Elementary Math",
+    "email":"heather.gray@schoolexample.com",
+    "phone":"555-0149"
+  },
+  {
+    "teacher_code":"TCH050",
+    "teacher_name":"Rachel Ramirez",
+    "school_code":"SCH006",
+    "subject":"English",
+    "specialization":"Primary Education",
+    "email":"rachel.ramirez@schoolexample.com",
+    "phone":"555-0150"
+  },
+  {
+    "teacher_code":"TCH051",
+    "teacher_name":"Eric James",
+    "school_code":"SCH006",
+    "subject":"Mathematics",
+    "specialization":"Elementary Math",
+    "email":"eric.james@schoolexample.com",
+    "phone":"555-0151"
+  },
+  {
+    "teacher_code":"TCH052",
+    "teacher_name":"Victoria Watson",
+    "school_code":"SCH006",
+    "subject":"Science",
+    "specialization":"General Science",
+    "email":"victoria.watson@schoolexample.com",
+    "phone":"555-0152"
+  },
+  {
+    "teacher_code":"TCH053",
+    "teacher_name":"Nicholas Brooks",
+    "school_code":"SCH006",
+    "subject":"Social Studies",
+    "specialization":"Civics",
+    "email":"nicholas.brooks@schoolexample.com",
+    "phone":"555-0153"
+  },
+  {
+    "teacher_code":"TCH054",
+    "teacher_name":"Christina Kelly",
+    "school_code":"SCH006",
+    "subject":"Mathematics",
+    "specialization":"Basic Math",
+    "email":"christina.kelly@schoolexample.com",
+    "phone":"555-0154"
+  },
+  {
+    "teacher_code":"TCH055",
+    "teacher_name":"Jack Sanders",
+    "school_code":"SCH006",
+    "subject":"Science",
+    "specialization":"Life Science",
+    "email":"jack.sanders@schoolexample.com",
+    "phone":"555-0155"
+  },
+  {
+    "teacher_code":"TCH056",
+    "teacher_name":"Lauren Price",
+    "school_code":"SCH006",
+    "subject":"Mathematics",
+    "specialization":"Math Fundamentals",
+    "email":"lauren.price@schoolexample.com",
+    "phone":"555-0156"
+  },
+  {
+    "teacher_code":"TCH057",
+    "teacher_name":"Henry Bennett",
+    "school_code":"SCH006",
+    "subject":"English",
+    "specialization":"Reading Skills",
+    "email":"henry.bennett@schoolexample.com",
+    "phone":"555-0157"
+  },
+  {
+    "teacher_code":"TCH058",
+    "teacher_name":"Julia Wood",
+    "school_code":"SCH006",
+    "subject":"Mathematics",
+    "specialization":"Pre-Algebra",
+    "email":"julia.wood@schoolexample.com",
+    "phone":"555-0158"
+  },
+  {
+    "teacher_code":"TCH059",
+    "teacher_name":"Ralph Barnes",
+    "school_code":"SCH006",
+    "subject":"Science",
+    "specialization":"General Science",
+    "email":"ralph.barnes@schoolexample.com",
+    "phone":"555-0159"
+  },
+  {
+    "teacher_code":"TCH060",
+    "teacher_name":"Tiffany Ross",
+    "school_code":"SCH006",
+    "subject":"English",
+    "specialization":"Literature I",
+    "email":"tiffany.ross@schoolexample.com",
+    "phone":"555-0160"
+  },
+  {
+    "teacher_code":"TCH061",
+    "teacher_name":"Patrick Henderson",
+    "school_code":"SCH006",
+    "subject":"Science",
+    "specialization":"Biology I",
+    "email":"patrick.henderson@schoolexample.com",
+    "phone":"555-0161"
+  },
+  {
+    "teacher_code":"TCH062",
+    "teacher_name":"Samantha Coleman",
+    "school_code":"SCH006",
+    "subject":"Mathematics",
+    "specialization":"Algebra I",
+    "email":"samantha.coleman@schoolexample.com",
+    "phone":"555-0162"
+  },
+  {
+    "teacher_code":"TCH063",
+    "teacher_name":"Ethan Jenkins",
+    "school_code":"SCH006",
+    "subject":"English",
+    "specialization":"Grammar",
+    "email":"ethan.jenkins@schoolexample.com",
+    "phone":"555-0163"
+  },
+  {
+    "teacher_code":"TCH064",
+    "teacher_name":"Amber Perry",
+    "school_code":"SCH006",
+    "subject":"Science",
+    "specialization":"Chemistry I",
+    "email":"amber.perry@schoolexample.com",
+    "phone":"555-0164"
+  },
+  {
+    "teacher_code":"TCH065",
+    "teacher_name":"Sean Powell",
+    "school_code":"SCH006",
+    "subject":"Mathematics",
+    "specialization":"Algebra II",
+    "email":"sean.powell@schoolexample.com",
+    "phone":"555-0165"
+  },
+  {
+    "teacher_code":"TCH066",
+    "teacher_name":"Brenda Long",
+    "school_code":"SCH006",
+    "subject":"Mathematics",
+    "specialization":"Geometry I",
+    "email":"brenda.long@schoolexample.com",
+    "phone":"555-0166"
+  },
+  {
+    "teacher_code":"TCH067",
+    "teacher_name":"Wayne Flores",
+    "school_code":"SCH006",
+    "subject":"Science",
+    "specialization":"Physics I",
+    "email":"wayne.flores@schoolexample.com",
+    "phone":"555-0167"
+  },
+  {
+    "teacher_code":"TCH068",
+    "teacher_name":"Marie Washington",
+    "school_code":"SCH006",
+    "subject":"English",
+    "specialization":"Advanced Grammar",
+    "email":"marie.washington@schoolexample.com",
+    "phone":"555-0168"
+  },
+  {
+    "teacher_code":"TCH069",
+    "teacher_name":"Philip Butler",
+    "school_code":"SCH006",
+    "subject":"Social Studies",
+    "specialization":"World History",
+    "email":"philip.butler@schoolexample.com",
+    "phone":"555-0169"
+  },
+  {
+    "teacher_code":"TCH070",
+    "teacher_name":"Debra Simmons",
+    "school_code":"SCH006",
+    "subject":"Mathematics",
+    "specialization":"Pre-Calculus",
+    "email":"debra.simmons@schoolexample.com",
+    "phone":"555-0170"
+  },
+  {
+    "teacher_code":"TCH071",
+    "teacher_name":"Arthur Foster",
+    "school_code":"SCH006",
+    "subject":"Science",
+    "specialization":"Environmental Science",
+    "email":"arthur.foster@schoolexample.com",
+    "phone":"555-0171"
+  },
+  {
+    "teacher_code":"TCH072",
+    "teacher_name":"Katherine Gonzales",
+    "school_code":"SCH006",
+    "subject":"English",
+    "specialization":"World Literature",
+    "email":"katherine.gonzales@schoolexample.com",
+    "phone":"555-0172"
+  },
+  {
+    "teacher_code":"TCH073",
+    "teacher_name":"Gregory Bryant",
+    "school_code":"SCH006",
+    "subject":"Mathematics",
+    "specialization":"Calculus",
+    "email":"gregory.bryant@schoolexample.com",
+    "phone":"555-0173"
+  },
+  {
+    "teacher_code":"TCH074",
+    "teacher_name":"Judy Alexander",
+    "school_code":"SCH006",
+    "subject":"Science",
+    "specialization":"Advanced Biology",
+    "email":"judy.alexander@schoolexample.com",
+    "phone":"555-0174"
+  },
+  {
+    "teacher_code":"TCH075",
+    "teacher_name":"Benjamin Russell",
+    "school_code":"SCH006",
+    "subject":"English",
+    "specialization":"AP Literature",
+    "email":"benjamin.russell@schoolexample.com",
+    "phone":"555-0175"
+  },
+  {
+    "teacher_code":"TCH076",
+    "teacher_name":"Janet Griffin",
+    "school_code":"SCH006",
+    "subject":"English",
+    "specialization":"American Literature",
+    "email":"janet.griffin@schoolexample.com",
+    "phone":"555-0176"
+  },
+  {
+    "teacher_code":"TCH077",
+    "teacher_name":"Harry Diaz",
+    "school_code":"SCH006",
+    "subject":"Mathematics",
+    "specialization":"AP Calculus",
+    "email":"harry.diaz@schoolexample.com",
+    "phone":"555-0177"
+  },
+  {
+    "teacher_code":"TCH078",
+    "teacher_name":"Cheryl Hayes",
+    "school_code":"SCH006",
+    "subject":"Science",
+    "specialization":"AP Biology",
+    "email":"cheryl.hayes@schoolexample.com",
+    "phone":"555-0178"
+  },
+  {
+    "teacher_code":"TCH079",
+    "teacher_name":"Scott Myers",
+    "school_code":"SCH006",
+    "subject":"Social Studies",
+    "specialization":"Economics",
+    "email":"scott.myers@schoolexample.com",
+    "phone":"555-0179"
+  },
+  {
+    "teacher_code":"TCH080",
+    "teacher_name":"Tyler Ford",
+    "school_code":"SCH007",
+    "subject":"Mathematics",
+    "specialization":"Geometry",
+    "email":"tyler.ford@schoolexample.com",
+    "phone":"555-0180"
+  },
+  {
+    "teacher_code":"TCH081",
+    "teacher_name":"Denise Hamilton",
+    "school_code":"SCH007",
+    "subject":"Science",
+    "specialization":"Biology",
+    "email":"denise.hamilton@schoolexample.com",
+    "phone":"555-0181"
+  },
+  {
+    "teacher_code":"TCH082",
+    "teacher_name":"Keith Graham",
+    "school_code":"SCH007",
+    "subject":"English",
+    "specialization":"Literature",
+    "email":"keith.graham@schoolexample.com",
+    "phone":"555-0182"
+  },
+  {
+    "teacher_code":"TCH083",
+    "teacher_name":"Carolyn Sullivan",
+    "school_code":"SCH007",
+    "subject":"Science",
+    "specialization":"Chemistry",
+    "email":"carolyn.sullivan@schoolexample.com",
+    "phone":"555-0183"
+  },
+  {
+    "teacher_code":"TCH084",
+    "teacher_name":"Jacob Wallace",
+    "school_code":"SCH007",
+    "subject":"Mathematics",
+    "specialization":"Algebra II",
+    "email":"jacob.wallace@schoolexample.com",
+    "phone":"555-0184"
+  },
+  {
+    "teacher_code":"TCH085",
+    "teacher_name":"Lois Cole",
+    "school_code":"SCH007",
+    "subject":"English",
+    "specialization":"Advanced Composition",
+    "email":"lois.cole@schoolexample.com",
+    "phone":"555-0185"
+  },
+  {
+    "teacher_code":"TCH086",
+    "teacher_name":"Roger West",
+    "school_code":"SCH007",
+    "subject":"English",
+    "specialization":"AP English Language",
+    "email":"roger.west@schoolexample.com",
+    "phone":"555-0186"
+  },
+  {
+    "teacher_code":"TCH087",
+    "teacher_name":"Beverly Brooks",
+    "school_code":"SCH007",
+    "subject":"Mathematics",
+    "specialization":"AP Calculus",
+    "email":"beverly.brooks@schoolexample.com",
+    "phone":"555-0187"
+  },
+  {
+    "teacher_code":"TCH088",
+    "teacher_name":"Philip Ortiz",
+    "school_code":"SCH007",
+    "subject":"Science",
+    "specialization":"AP Physics",
+    "email":"philip.ortiz@schoolexample.com",
+    "phone":"555-0188"
+  },
+  {
+    "teacher_code":"TCH089",
+    "teacher_name":"Anna Jordan",
+    "school_code":"SCH007",
+    "subject":"Social Studies",
+    "specialization":"AP US History",
+    "email":"anna.jordan@schoolexample.com",
+    "phone":"555-0189"
+  },
+  {
+    "teacher_code":"TCH090",
+    "teacher_name":"Keith Reynolds",
+    "school_code":"SCH008",
+    "subject":"Mathematics",
+    "specialization":"Algebra",
+    "email":"keith.reynolds@schoolexample.com",
+    "phone":"555-0190"
+  },
+  {
+    "teacher_code":"TCH091",
+    "teacher_name":"Nicole Fisher",
+    "school_code":"SCH008",
+    "subject":"Science",
+    "specialization":"General Science",
+    "email":"nicole.fisher@schoolexample.com",
+    "phone":"555-0191"
+  },
+  {
+    "teacher_code":"TCH092",
+    "teacher_name":"Douglas Ellis",
+    "school_code":"SCH008",
+    "subject":"English",
+    "specialization":"Literature",
+    "email":"douglas.ellis@schoolexample.com",
+    "phone":"555-0192"
+  },
+  {
+    "teacher_code":"TCH093",
+    "teacher_name":"Ann Harrison",
+    "school_code":"SCH008",
+    "subject":"Science",
+    "specialization":"Biology",
+    "email":"ann.harrison@schoolexample.com",
+    "phone":"555-0193"
+  },
+  {
+    "teacher_code":"TCH094",
+    "teacher_name":"Janice Gibson",
+    "school_code":"SCH008",
+    "subject":"Mathematics",
+    "specialization":"Geometry",
+    "email":"janice.gibson@schoolexample.com",
+    "phone":"555-0194"
+  },
+  {
+    "teacher_code":"TCH095",
+    "teacher_name":"Peter Murray",
+    "school_code":"SCH008",
+    "subject":"English",
+    "specialization":"Composition",
+    "email":"peter.murray@schoolexample.com",
+    "phone":"555-0195"
+  },
+  {
+    "teacher_code":"TCH096",
+    "teacher_name":"Alice Freeman",
+    "school_code":"SCH009",
+    "subject":"English",
+    "specialization":"AP Literature",
+    "email":"alice.freeman@schoolexample.com",
+    "phone":"555-0196"
+  },
+  {
+    "teacher_code":"TCH097",
+    "teacher_name":"Samuel Wells",
+    "school_code":"SCH009",
+    "subject":"Mathematics",
+    "specialization":"AP Calculus AB",
+    "email":"samuel.wells@schoolexample.com",
+    "phone":"555-0197"
+  },
+  {
+    "teacher_code":"TCH098",
+    "teacher_name":"Martha Webb",
+    "school_code":"SCH009",
+    "subject":"Science",
+    "specialization":"AP Chemistry",
+    "email":"martha.webb@schoolexample.com",
+    "phone":"555-0198"
+  },
+  {
+    "teacher_code":"TCH099",
+    "teacher_name":"Frank Simpson",
+    "school_code":"SCH009",
+    "subject":"Social Studies",
+    "specialization":"AP World History",
+    "email":"frank.simpson@schoolexample.com",
+    "phone":"555-0199"
+  },
+  {
+    "teacher_code":"TCH100",
+    "teacher_name":"Ralph Stevens",
+    "school_code":"SCH010",
+    "subject":"English",
+    "specialization":"AP English Language",
+    "email":"ralph.stevens@schoolexample.com",
+    "phone":"555-0200"
+  },
+  {
+    "teacher_code":"TCH101",
+    "teacher_name":"Ruth Tucker",
+    "school_code":"SCH010",
+    "subject":"Mathematics",
+    "specialization":"AP Calculus BC",
+    "email":"ruth.tucker@schoolexample.com",
+    "phone":"555-0201"
+  },
+  {
+    "teacher_code":"TCH102",
+    "teacher_name":"Gerald Hunter",
+    "school_code":"SCH010",
+    "subject":"Science",
+    "specialization":"AP Physics C",
+    "email":"gerald.hunter@schoolexample.com",
+    "phone":"555-0202"
+  },
+  {
+    "teacher_code":"TCH103",
+    "teacher_name":"Shirley Hicks",
+    "school_code":"SCH010",
+    "subject":"Social Studies",
+    "specialization":"AP Economics",
+    "email":"shirley.hicks@schoolexample.com",
+    "phone":"555-0203"
+  }
+]
